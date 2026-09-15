@@ -5,6 +5,8 @@ int main(void)
     int user_input;
     int i;
     int j;
+    int k;
+    int l;
     char hashtag = '#';
     char space = '-';
     do
@@ -14,13 +16,4 @@ int main(void)
     }
     while(1 > user_input > 8);
 
-    for (int i = 0; i < user_input; i++)
-    {
-        printf("%c", hashtag);
-    }
-    
-    for (int j = 0; j < 2; j++)
-    {
-        printf("%c", space);
-    }
 }
