@@ -24,4 +24,9 @@ int main(void)
     {
         printf("The result is: %.2f", (float)value_1 / value_2);
     }
+    // Temporary Input Validation
+    else
+    {
+        printf("Invalid input!");
+    }
 }
