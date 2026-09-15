@@ -39,6 +39,7 @@ int main(void)
     {
         printf("Disagreed!\n");
     }
+    // Validate input
     else
     {
         printf("Invalid input!\n");
