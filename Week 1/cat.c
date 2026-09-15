@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+int input_with_check(void);
 int main(void)
 {
     // Using a while loop for repetition
@@ -15,19 +16,22 @@ int main(void)
     {
         break; //PLACEHOLDER
     }
-
-    int number;
-    // Input validation
-    do
-    {
-        printf("How many times do you want the cat to meow? ");
-        scanf("%i", &number);
-    }
-    while (number <= 0);    
-    
+    printf("How many times do you want the cat to meow? ");
+    int number = input_with_check();
     // Printing meow
     for (int i = 0; i < number; i++)
     {
         printf("meow\n");
     }
+}
+
+int input_with_check(void){
+    int number;
+    do
+    {
+        scanf("%i", &number);
+    }
+    while (number <= 0);
+
+    return number;
 }
