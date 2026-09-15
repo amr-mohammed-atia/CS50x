@@ -1,7 +1,21 @@
 #include <stdio.h>
-#include "cs50.h"
 
 int main(void)
 {
-    printf("Hello, World!\n");
+    int x;
+    int y;
+    printf("Enter X and Y: ");
+    scanf("%i %i", &x, &y);
+    if (x > y)
+    {
+        printf("X is greater than Y.\n");
+    }
+    else if (x < y)
+    {
+        printf("X is smaller than Y.\n");
+    }
+    else
+    {
+        printf("X is equal to Y.\n");
+    }
 }
