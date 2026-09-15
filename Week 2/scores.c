@@ -7,6 +7,8 @@ int main(void)
     // Initialisation of user values
     int input_amount = 0;
     int user_input = 0;
+
+    printf("Average Score Calculator.\n");
     // Input Validation
     do
     {
@@ -42,5 +44,5 @@ float average(int numbers[], int input_amount)
         sum += numbers[j];
     }
     // Return the average to be used in the print function above
-    return (sum / (float)input_amount);
+    return (sum / (float) input_amount);
 }
