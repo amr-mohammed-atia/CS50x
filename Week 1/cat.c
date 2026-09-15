@@ -16,7 +16,6 @@ int main(void)
         break; //PLACEHOLDER
     }
 
-    // Asking user how many times to meow
     int number;
     // Input validation
     do
