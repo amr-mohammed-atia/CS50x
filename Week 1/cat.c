@@ -2,10 +2,17 @@
 
 int main(void)
 {
-    int i = 3;
-    while (i > 0)
+    // Using a while loop for repetition
+    int i = 0;
+    while (i < 3)
     {
         printf("meow\n");
-        i--;
+        i++;
+    }
+
+    // Using a for loop for repetition
+    for (int i = 0; i < 3; i++)
+    {
+        printf("meow\n");
     }
 }
