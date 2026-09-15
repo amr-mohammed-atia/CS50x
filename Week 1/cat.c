@@ -6,12 +6,21 @@ int main(void)
     int i = 0;
     while (i < 3)
     {
-        printf("meow\n");
+        break; // PLACEHOLDER
         i++;
     }
 
     // Using a for loop for repetition
     for (int i = 0; i < 3; i++)
+    {
+        break; //PLACEHOLDER
+    }
+
+    // Asking user how many times to meow
+    int number;
+    printf("How many times do you want the cat to meow? ");
+    scanf("%i", &number);
+    for (int i = 0; i < number; i++)
     {
         printf("meow\n");
     }
