@@ -19,11 +19,13 @@ int main(void)
     // Asking user how many times to meow
     int number;
     // Input validation
-    while (number <= 0)
+    do
     {
         printf("How many times do you want the cat to meow? ");
         scanf("%i", &number);
     }
+    while (number <= 0);    
+    
     // Printing meow
     for (int i = 0; i < number; i++)
     {
