@@ -20,6 +20,13 @@ int main(void)
     int number;
     printf("How many times do you want the cat to meow? ");
     scanf("%i", &number);
+    // Input validation
+    while (number <= 0)
+    {
+        printf("How many times do you want the cat to meow? ");
+        scanf("%i", &number);
+    }
+    // Printing meow
     for (int i = 0; i < number; i++)
     {
         printf("meow\n");
